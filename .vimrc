@@ -21,7 +21,7 @@ au FileType html setlocal dict+=~/.vim/dict/css.dict
 
 "
 "syntastic相关
-execute pathogen#infect()
+"execute pathogen#infect() #Fix me, there is something wrong!
 let g:syntastic_python_checkers=['pylint']
 let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 "golang
@@ -92,6 +92,7 @@ set viminfo+=!
 set iskeyword+=_,$,@,%,#,-
 " 字符间插入的像素行数目
 
+
 "markdown配置
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 au BufRead,BufNewFile *.{go}   set filetype=go
@@ -145,7 +146,7 @@ func SetTitle()
 		call append(line(".")+8, "")
 	endif
 	if &filetype == 'c'
-		call append(line(".")+6, "#include<stdio.h>")
+		call append(line(".")+6, "///clude<stdio.h>")
 		call append(line(".")+7, "")
 	endif
 	if expand("%:e") == 'h'
@@ -309,9 +310,6 @@ set noswapfile
 "搜索忽略大小写
 set ignorecase
 
-
-
-
 set linespace=0
 " 增强模式中的命令行自动完成操作
 set wildmenu
@@ -409,46 +407,46 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 "filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"call vundle#rc() #Fix me, there is something wrong!
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle' #Fix me, there is something wrong!
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'Yggdroot/indentLine'
+"Bundle 'tpope/vim-fugitive' #Fix me, there is something wrong!
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'} #Fix me, there is something wrong!
+"Bundle 'Yggdroot/indentLine' #Fix me, there is something wrong!
 let g:indentLine_char = '┊'
 "ndle 'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'L9' #Fix me, there is something wrong!
+"Bundle 'FuzzyFinder' #Fix me, there is something wrong!
 " non github repos
-Bundle 'https://github.com/wincent/command-t.git'
-Bundle 'Auto-Pairs'
-Bundle 'python-imports.vim'
-Bundle 'CaptureClipboard'
-Bundle 'ctrlp-modified.vim'
-Bundle 'last_edit_marker.vim'
-Bundle 'synmark.vim'
+"Bundle 'https://github.com/wincent/command-t.git' #Fix me, there is something wrong!
+"Bundle 'Auto-Pairs' #Fix me, there is something wrong!
+"Bundle 'python-imports.vim' #Fix me, there is something wrong!
+"Bundle 'CaptureClipboard' #Fix me, there is something wrong!
+"Bundle 'ctrlp-modified.vim' #Fix me, there is something wrong!
+"Bundle 'last_edit_marker.vim' #Fix me, there is something wrong!
+"Bundle 'synmark.vim' #Fix me, there is something wrong!
 "Bundle 'Python-mode-klen'
-Bundle 'SQLComplete.vim'
-Bundle 'Javascript-OmniCompletion-with-YUI-and-j'
+"Bundle 'SQLComplete.vim' #Fix me, there is something wrong!
+"Bundle 'Javascript-OmniCompletion-with-YUI-and-j' #Fix me, there is something wrong!
 "Bundle 'JavaScript-Indent'
 "Bundle 'Better-Javascript-Indentation'
-Bundle 'jslint.vim'
-Bundle "pangloss/vim-javascript"
-Bundle 'Vim-Script-Updater'
-Bundle 'ctrlp.vim'
-Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'jsbeautify'
-Bundle 'The-NERD-Commenter'
+"Bundle 'jslint.vim' #Fix me, there is something wrong!
+"Bundle "pangloss/vim-javascript" #Fix me, there is something wrong!
+"Bundle 'Vim-Script-Updater' #Fix me, there is something wrong!
+"Bundle 'ctrlp.vim' #Fix me, there is something wrong!
+"Bundle 'tacahiroy/ctrlp-funky' #Fix me, there is something wrong!
+"Bundle 'jsbeautify' #Fix me, there is something wrong!
+"Bundle 'The-NERD-Commenter' #Fix me, there is something wrong!
 "django
-Bundle 'django_templates.vim'
-Bundle 'Django-Projects'
+"Bundle 'django_templates.vim' #Fix me, there is something wrong!
+"Bundle 'Django-Projects' #Fix me, there is something wrong!
 
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
